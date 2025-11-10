@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surveiller — Mon Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header class="subheader">
+    <div class="container">
+      <a class="backlink" href="index.html">← Accueil</a>
+      <h1>Surveiller — Niveau 2</h1>
+      <p class="subtitle">
+        Mettre en œuvre le système de surveillance d’incidents de sécurité.
+      </p>
+    </div>
+  </header>
+
+  <main class="page">
+    <!-- Résumé visuel des capacités -->
+    <section class="capabilities">
+      <h2>Capacités visées</h2>
+      <ul class="badges">
+        <li class="badge">AC35.01Cyber</li>
+        <li class="badge">AC35.02Cyber</li>
+        <li class="badge">AC35.03Cyber</li>
+        <li class="badge">AC35.04Cyber</li>
+      </ul>
+    </section>
+
+    <!-- Grille des sections pliables -->
+    <section class="accordion-grid">
+
+      <!-- AC35.01Cyber -->
+      <details class="accordion" open>
+        <summary>
+          <span class="tag">AC35.01Cyber</span>
+          Surveiller l’activité du système d’information
+        </summary>
+        <div class="content">
+          <div class="two-col">
+            <div>
+              <h3>Objectifs</h3>
+              <ul>
+                <li>Mettre en place la collecte et l’analyse des journaux (logs)</li>
+                <li>Définir les indicateurs clés de sécurité (KPI, alertes, seuils)</li>
+                <li>Suivre les activités utilisateurs et systèmes</li>
+              </ul>
+              <h3>Outils / Techno</h3>
+              <p>Syslog, Wazuh, ELK Stack (Elasticsearch, Logstash, Kibana), Graylog, Grafana.</p>
+            </div>
+            <div>
+              <h3>Livrables possibles</h3>
+              <ul>
+                <li>Tableau de bord de surveillance</li>
+                <li>Procédure de collecte et de corrélation</li>
+                <li>Rapport d’analyse d’activité</li>
+              </ul>
+              <h3>Preuves</h3>
+              <p>Captures de dashboard, logs annotés, rapport d’alerte.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- AC35.02Cyber -->
+      <details class="accordion">
+        <summary>
+          <span class="tag">AC35.02Cyber</span>
+          Appliquer une méthodologie de tests de pénétration
+        </summary>
+        <div class="content">
+          <div class="two-col">
+            <div>
+              <h3>Objectifs</h3>
+              <ul>
+                <li>Mettre en œuvre un pentest structuré (reconnaissance, scanning, exploitation)</li>
+                <li>Identifier et exploiter les vulnérabilités de manière encadrée</li>
+                <li>Rédiger un rapport professionnel de test d’intrusion</li>
+              </ul>
+              <h3>Outils / Techno</h3>
+              <p>Kali Linux, Nmap, Metasploit, Burp Suite, Nikto, OWASP ZAP, Nessus.</p>
+            </div>
+            <div>
+              <h3>Livrables possibles</h3>
+              <ul>
+                <li>Plan de test d’intrusion</li>
+                <li>Rapport de vulnérabilités</li>
+                <li>Recommandations de correction</li>
+              </ul>
+              <h3>Preuves</h3>
+              <p>Captures des outils, logs d’attaque simulée, rapport d’audit PDF.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- AC35.03Cyber -->
+      <details class="accordion">
+        <summary>
+          <span class="tag">AC35.03Cyber</span>
+          Réagir face à un incident de sécurité
+        </summary>
+        <div class="content">
+          <div class="two-col">
+            <div>
+              <h3>Objectifs</h3>
+              <ul>
+                <li>Mettre en place une procédure de réponse à incident (PRI)</li>
+                <li>Analyser, contenir et éradiquer un incident</li>
+                <li>Assurer le retour à la normale et la documentation post-incident</li>
+              </ul>
+              <h3>Outils / Méthodes</h3>
+              <p>Sysmon, Wazuh, Autopsy, Volatility, outils de forensic et de logs d’événements.</p>
+            </div>
+            <div>
+              <h3>Livrables possibles</h3>
+              <ul>
+                <li>Rapport d’incident complet</li>
+                <li>Chronologie et causes identifiées</li>
+                <li>Plan d’amélioration et recommandations</li>
+              </ul>
+              <h3>Preuves</h3>
+              <p>Rapports PDF, journaux horodatés, captures d’analyse forensic.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- AC35.04Cyber -->
+      <details class="accordion">
+        <summary>
+          <span class="tag">AC35.04Cyber</span>
+          Administrer les outils de surveillance du système d’information
+        </summary>
+        <div class="content">
+          <div class="two-col">
+            <div>
+              <h3>Objectifs</h3>
+              <ul>
+                <li>Installer, configurer et maintenir les outils de supervision</li>
+                <li>Gérer les alertes, les flux de logs et les tableaux de bord</li>
+                <li>Optimiser les performances et les seuils d’alerte</li>
+              </ul>
+              <h3>Outils / Techno</h3>
+              <p>Wazuh, Nagios, Zabbix, Grafana, Prometheus, ELK Stack.</p>
+            </div>
+            <div>
+              <h3>Livrables possibles</h3>
+              <ul>
+                <li>Configuration de la plateforme SIEM / NMS</li>
+                <li>Documentation technique (tutoriel / manuel d’administration)</li>
+                <li>Tableaux de bord de supervision</li>
+              </ul>
+              <h3>Preuves</h3>
+              <p>Captures d’écran de l’interface, exports de logs, scripts de configuration.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+
+    </section>
+
+    <!-- Zone projets / pièces jointes -->
+    <section class="projects">
+      <h2>Projets & pièces jointes</h2>
+      <div class="cards-attachments">
+        <a class="attach-card" href="#" target="_blank" rel="noopener">📁 Rapport de tests de pénétration</a>
+        <a class="attach-card" href="#" target="_blank" rel="noopener">🖼️ Tableau de bord de supervision</a>
+        <a class="attach-card" href="#" target="_blank" rel="noopener">📝 Rapport d’incident</a>
+      </div>
+      <p class="hint">Remplace les liens par tes fichiers, rapports ou tableaux de bord réels.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Mon Portfolio | HTML & CSS</p>
+  </footer>
+</body>
+</html>

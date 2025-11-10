@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sécuriser — Mon Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header class="subheader">
+    <div class="container">
+      <a class="backlink" href="index.html">← Accueil</a>
+      <h1>Sécuriser — Niveau 2</h1>
+      <p class="subtitle">
+        Mettre en œuvre un système d’information sécurisé pour une petite structure.
+      </p>
+    </div>
+  </header>
+
+  <main class="page">
+    <!-- Résumé visuel des capacités -->
+    <section class="capabilities">
+      <h2>Capacités visées</h2>
+      <ul class="badges">
+        <li class="badge">AC34.01Cyber</li>
+        <li class="badge">AC34.02Cyber</li>
+        <li class="badge">AC34.03Cyber</li>
+        <li class="badge">AC34.04Cyber</li>
+      </ul>
+    </section>
+
+    <!-- Grille des sections pliables -->
+    <section class="accordion-grid">
+
+      <!-- AC34.01Cyber -->
+      <details class="accordion" open>
+        <summary>
+          <span class="tag">AC34.01Cyber</span>
+          Participer activement à une analyse de risque pour définir une politique de sécurité
+        </summary>
+        <div class="content">
+          <div class="two-col">
+            <div>
+              <h3>Objectifs</h3>
+              <ul>
+                <li>Identifier les menaces, vulnérabilités et impacts potentiels</li>
+                <li>Évaluer les risques et hiérarchiser les priorités</li>
+                <li>Proposer une politique de sécurité adaptée à la taille et aux besoins de la structure</li>
+              </ul>
+              <h3>Outils / Méthodes</h3>
+              <p>EBIOS RM, MEHARI, ISO 27005, table d’évaluation des risques.</p>
+            </div>
+            <div>
+              <h3>Livrables possibles</h3>
+              <ul>
+                <li>Analyse de risques (tableur / rapport)</li>
+                <li>Politique de sécurité (PSSI)</li>
+                <li>Plan d’action priorisé</li>
+              </ul>
+              <h3>Preuves</h3>
+              <p>Extraits de matrice de risques, graphique d’évaluation, rapport PDF.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- AC34.02Cyber -->
+      <details class="accordion">
+        <summary>
+          <span class="tag">AC34.02Cyber</span>
+          Mettre en œuvre des outils avancés de sécurisation d’une infrastructure réseau
+        </summary>
+        <div class="content">
+          <div class="two-col">
+            <div>
+              <h3>Objectifs</h3>
+              <ul>
+                <li>Installer et configurer des pare-feux, IDS/IPS, et proxies</li>
+                <li>Mettre en place la segmentation réseau (VLAN, DMZ)</li>
+                <li>Appliquer le principe du moindre privilège</li>
+              </ul>
+              <h3>Outils / Techno</h3>
+              <p>pfSense, Suricata, Snort, Nginx reverse-proxy, VLAN Cisco / Linux, Fail2Ban.</p>
+            </div>
+            <div>
+              <h3>Livrables possibles</h3>
+              <ul>
+                <li>Schéma d’architecture réseau sécurisé</li>
+                <li>Configurations de pare-feu / VLAN</li>
+                <li>Rapport de tests de filtrage</li>
+              </ul>
+              <h3>Preuves</h3>
+              <p>Captures d’écran, logs d’alertes IDS, exports de configuration.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- AC34.03Cyber -->
+      <details class="accordion">
+        <summary>
+          <span class="tag">AC34.03Cyber</span>
+          Sécuriser les systèmes d’exploitation
+        </summary>
+        <div class="content">
+          <div class="two-col">
+            <div>
+              <h3>Objectifs</h3>
+              <ul>
+                <li>Durcir les systèmes Windows et Linux</li>
+                <li>Gérer les droits utilisateurs, services et mises à jour</li>
+                <li>Configurer les journaux et la surveillance locale</li>
+              </ul>
+              <h3>Outils / Techno</h3>
+              <p>Windows Defender, GPO, Auditpol, Fail2ban, Lynis, SELinux, AppArmor.</p>
+            </div>
+            <div>
+              <h3>Livrables possibles</h3>
+              <ul>
+                <li>Procédure de durcissement (checklist)</li>
+                <li>Rapport d’audit sécurité</li>
+                <li>Journal d’événements avant/après durcissement</li>
+              </ul>
+              <h3>Preuves</h3>
+              <p>Captures de configurations, rapports d’outils, scripts d’automatisation.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- AC34.04Cyber -->
+      <details class="accordion">
+        <summary>
+          <span class="tag">AC34.04Cyber</span>
+          Proposer une architecture sécurisée de système d'information
+        </summary>
+        <div class="content">
+          <div class="two-col">
+            <div>
+              <h3>Objectifs</h3>
+              <ul>
+                <li>Concevoir une architecture réseau résiliente et segmentée</li>
+                <li>Intégrer les mécanismes de sécurité (authentification, sauvegarde, supervision)</li>
+                <li>Prévoir les plans de continuité et de reprise d’activité (PCA/PRA)</li>
+              </ul>
+              <h3>Outils / Techno</h3>
+              <p>Virtualisation, VLAN, Active Directory, pfSense, GLPI, sauvegardes automatiques, monitoring.</p>
+            </div>
+            <div>
+              <h3>Livrables possibles</h3>
+              <ul>
+                <li>Schéma global du SI sécurisé</li>
+                <li>Plan de continuité / PRA</li>
+                <li>Documentation d’architecture (PDF / diagrammes)</li>
+              </ul>
+              <h3>Preuves</h3>
+              <p>Schémas, fichiers de configuration, rapport de validation technique.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+
+    </section>
+
+    <!-- Zone projets / pièces jointes -->
+    <section class="projects">
+      <h2>Projets & pièces jointes</h2>
+      <div class="cards-attachments">
+        <a class="attach-card" href="#" target="_blank" rel="noopener">📁 PSSI complète</a>
+        <a class="attach-card" href="#" target="_blank" rel="noopener">🖼️ Schéma d’architecture sécurisée</a>
+        <a class="attach-card" href="#" target="_blank" rel="noopener">📝 Rapport d’audit</a>
+      </div>
+      <p class="hint">Remplace les liens par tes fichiers ou rapports (GitHub, PDF, images, etc.).</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Mon Portfolio | HTML & CSS</p>
+  </footer>
+</body>
+</html>
