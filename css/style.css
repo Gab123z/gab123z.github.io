@@ -246,3 +246,241 @@ footer {
   transform:translateY(-3px); box-shadow:0 6px 14px rgba(0,0,0,.15);
 }
 .hint{ text-align:center; color:#666; font-size:.95rem; margin-top:10px; }
+
+/* =========================
+   DARK MODE (look comme ta 2e image)
+   À COLLER À LA FIN DU CSS
+   ========================= */
+
+   :root{
+    --bg: #15181b;        /* fond global */
+    --section: #1c2024;   /* bande/section */
+    --card: #23282e;      /* cartes */
+    --text: #e8eaed;      /* texte principal */
+    --muted: #b6bcc6;     /* texte secondaire */
+    --border: #2d333b;    /* bordures */
+    --shadow: 0 10px 30px rgba(0,0,0,.35);
+  }
+  
+  /* Fond + texte global */
+  html, body{
+    background: var(--bg) !important;
+    color: var(--text) !important;
+  }
+  
+  /* Titres / paragraphes */
+  h1,h2,h3,h4,h5,h6{ color: var(--text) !important; }
+  p,li,span,small{ color: var(--muted); }
+  
+  /* Liens */
+  a{ color: #8ab4f8; }
+  a:hover{ filter: brightness(1.1); }
+  
+  /* Bandes de section (effet “grosses zones” comme ton rendu) */
+  section{
+    background: var(--section) !important;
+  }
+  
+  /* Si tu as plusieurs sections et tu veux alterner un peu */
+  section:nth-of-type(even){
+    background: #181c20 !important;
+  }
+  
+  /* Cartes / blocs (tes rectangles “catégories”) */
+  .card, .box, .category, .categorie, .item, .tile, .container > div{
+    background: var(--card);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    border-radius: 12px;
+  }
+  
+  /* Menus / boutons en haut */
+  nav, header{
+    background: transparent !important;
+  }
+  
+  /* Boutons (y compris ceux du menu) */
+  button, .btn, .button, nav a{
+    background: #1f242a !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+    box-shadow: var(--shadow);
+  }
+  
+  button:hover, .btn:hover, .button:hover, nav a:hover{
+    background: #2a3038 !important;
+  }
+  
+  /* Inputs */
+  input, textarea, select{
+    background: #1f242a !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+  }
+  input::placeholder, textarea::placeholder{
+    color: #8b93a1;
+  }
+  
+  /* Images : garde les coins arrondis comme sur ta capture */
+  img{
+    border-radius: 10px;
+  }
+  
+  /* Séparateurs / hr */
+  hr{
+    border-color: var(--border);
+  }
+
+/* =========================
+   FIX DARK MODE (cartes + textes)
+   À COLLER TOUT EN BAS
+   ========================= */
+
+   :root{
+    --bg: #15181b;
+    --section: #1c2024;
+    --card: #23282e;
+    --text: #e8eaed;
+    --muted: #b6bcc6;
+    --border: #2d333b;
+    --shadow: 0 10px 30px rgba(0,0,0,.35);
+  }
+  
+  html, body{
+    background: var(--bg) !important;
+    color: var(--text) !important;
+  }
+  
+  /* Force une couleur de texte claire partout (évite le noir sur noir) */
+  body, body *{
+    color: inherit;
+  }
+  
+  /* Titres / texte */
+  h1,h2,h3,h4,h5,h6{ color: var(--text) !important; }
+  p,li,small{ color: var(--muted) !important; }
+  
+  /* Sections en "bandes" */
+  section, main, header, footer{
+    background: var(--section) !important;
+  }
+  
+  /* Alternance légère des sections (comme ton screen 2) */
+  section:nth-of-type(even){
+    background: #181c20 !important;
+  }
+  
+  /* ====== CARTES / BLOCS ======
+     On cible large + intelligent pour attraper tes petits blocs même si on ne connait pas leurs classes
+  */
+  .card, .box, .bloc, .tile, .item,
+  [class*="card"], [class*="box"], [class*="bloc"], [class*="tile"],
+  [class*="categorie"], [class*="category"]{
+    background: var(--card) !important;
+    border: 1px solid var(--border) !important;
+    box-shadow: var(--shadow) !important;
+    border-radius: 12px !important;
+  }
+  
+  /* Texte DANS les cartes : toujours clair */
+  .card *, .box *, .bloc *, .tile *, .item *,
+  [class*="card"] *, [class*="box"] *, [class*="bloc"] *, [class*="tile"] *,
+  [class*="categorie"] *, [class*="category"] *{
+    color: var(--text) !important;
+  }
+  
+  /* Petits textes dans cartes */
+  .card p, .box p, .bloc p,
+  [class*="card"] p, [class*="box"] p, [class*="bloc"] p,
+  [class*="categorie"] p, [class*="category"] p{
+    color: var(--muted) !important;
+  }
+  
+  /* Menu / boutons */
+  button, .btn, .button, nav a{
+    background: #1f242a !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+    box-shadow: var(--shadow) !important;
+  }
+  
+  button:hover, .btn:hover, .button:hover, nav a:hover{
+    background: #2a3038 !important;
+  }
+  
+  /* Inputs */
+  input, textarea, select{
+    background: #1f242a !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+  }
+  
+  /* SVG/icônes : les forcer à suivre la couleur du texte */
+  svg{ fill: currentColor !important; }
+  svg *{ stroke: currentColor !important; }
+
+/* =========================================
+   DARK MODE - PAGES CATEGORIES / ACCORDEONS
+   À COLLER TOUT EN BAS DU CSS
+   ========================================= */
+
+   :root{
+    --bg: #15181b;
+    --section: #1c2024;
+    --card: #23282e;
+    --card2:#1f242a;
+    --text: #e8eaed;
+    --muted: #b6bcc6;
+    --border: #2d333b;
+    --shadow: 0 10px 30px rgba(0,0,0,.35);
+  }
+  
+  /* Tout ce qui ressemble à un bloc/accordéon */
+  details,
+  details > summary,
+  .accordion, .accordion-item, .accordion-header, .accordion-body,
+  .collapse, .collapsing, .collapse.show,
+  .panel, .panel-heading, .panel-body,
+  .faq, .faq-item,
+  [class*="accordion"], [class*="collapse"], [class*="panel"], [class*="faq"]{
+    background: var(--card) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+    box-shadow: var(--shadow) !important;
+  }
+  
+  /* Contenu à l'intérieur (texte lisible) */
+  details *, .accordion *, .collapse *, .panel *, .faq *,
+  [class*="accordion"] *, [class*="collapse"] *, [class*="panel"] *, [class*="faq"] *{
+    color: var(--text) !important;
+  }
+  
+  /* Textes secondaires dans les blocs */
+  details p, details li,
+  .accordion-body p, .accordion-body li,
+  .panel-body p, .panel-body li,
+  [class*="accordion"] p, [class*="accordion"] li,
+  [class*="panel"] p, [class*="panel"] li{
+    color: var(--muted) !important;
+  }
+  
+  /* Bouton/entête cliquable de l’accordéon */
+  summary,
+  .accordion-header,
+  .panel-heading,
+  [class*="accordion"] .header,
+  [class*="accordion"] .title{
+    background: var(--card2) !important;
+    color: var(--text) !important;
+    border-bottom: 1px solid var(--border) !important;
+  }
+  
+  /* Si tu as des "pills" (AC21.xx) en haut */
+  .badge, .pill, .chip,
+  [class*="badge"], [class*="pill"], [class*="chip"]{
+    background: var(--card2) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+  }
+  
